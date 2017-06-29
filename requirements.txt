@@ -1,3 +1,4 @@
 Django
-Wagtail
+wagtail
 longclaw
+django-bootstrap-themes

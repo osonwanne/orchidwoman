@@ -1,4 +1,6 @@
-{% load static wagtailuserbar %}
+{% load static wagtailuserbar bootstrap_themes %}
+
+{% bootstrap_styles theme='readable' type='min.css' %}
 
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -20,11 +22,59 @@
         {% endblock %}
     </head>
 
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Orchid Woman</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/">Collection</a>
+                    </li>
+                    <li>
+                        <a href="/">Catalog</a>
+                    </li>
+                    <li>
+                        <a href="/">Promotion</a>
+                    </li>
+{#                    <li>#}
+{#                        <a href="/blog">Blog</a>#}
+{#                    </li>#}
+                    <li>
+                        <a href="/contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->  
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <br>
+
+    <br>
+
+    <br>
+
+    <!-- Page Content -->
+    <div class="container">
+
     <body class="{% block body_class %}{% endblock %}">
         {% wagtailuserbar %}
 
         {% block content %}{% endblock %}
 
+    </div>
         {# Global javascript #}
         <script type="text/javascript" src="{% static 'js/orchidwoman.js' %}"></script>
 
