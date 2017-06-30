@@ -1,2 +1,3 @@
-# orchidwoman
-clothing / fashion business. orchidwoman.com
+# Orchid Woman
+
+clothing / fashion business. http://orchidwoman.com

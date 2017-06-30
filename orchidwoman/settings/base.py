@@ -62,8 +62,6 @@ INSTALLED_APPS = [
     'home',
     'search',
     'products',
-    
-    'bootstrap_themes',
 
 ]
 
