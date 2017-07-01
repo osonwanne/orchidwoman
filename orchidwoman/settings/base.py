@@ -63,6 +63,8 @@ INSTALLED_APPS = [
     'search',
     'products',
 
+    'bootstrap3',
+
 ]
 
 MIDDLEWARE = [
