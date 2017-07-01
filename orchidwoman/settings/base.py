@@ -64,6 +64,7 @@ INSTALLED_APPS = [
     'products',
 
     'bootstrap3',
+    'bootstrap_themes',
 
 ]
 
